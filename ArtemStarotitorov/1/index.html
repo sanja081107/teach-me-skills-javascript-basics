@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Dialog example</title>
+        <style>
+            .btn {
+                text-align: center;
+                text-decoration: none;
+                background-color: blue;
+                color: white;
+                text-transform: capitalize;
+                padding: 20px 0px;
+                min-width: 150px;
+                border: 1px solid darkblue;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="open" class="btn">Open Dialog</button>
+        <button id="close" class="btn">Close Dialog</button>
+
+        <dialog id="dialog">
+            <h2>Dialog Title</h2>
+            <p>Dialog content and other stuff will go here</p>
+        </dialog>
+
+        <script>
+            window.onload = function() {
+                const dialog = document.getElementById("dialog");
+
+                document.getElementById("open").addEventListener("click", function() {
+                    dialog.show();
+                });
+
+                document.getElementById("close").addEventListener("click", function() {
+                    dialog.close();
+                });
+            }
+        </script>
+    </body>
+</html>
