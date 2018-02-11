@@ -1,0 +1,87 @@
+body { background: url('images/Lavanda.jpg');
+color:gray; }
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;   
+}
+
+.block {
+    background: #d3fcbe;
+    border: 1px solid rgb(121, 117, 117);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 400px;
+    width: 400px;}
+    
+    img {
+        display: block;
+        border: none;
+    }
+    .block .top1 {
+        background: url('images/22.jpg');
+        border: 0px solid brown;
+        border-radius: 10px 10px 0px 0px ;
+        height: 100px;
+        width: 400px;}
+
+
+        .block .top2 {
+            border: 0px solid brown;
+            border-radius: 0px 0px 10px 10px ;
+            height: 300px;
+            width: 400px;
+        overflow: auto;}
+           
+            .top2 .right {
+               
+                width: 250px; 
+                height: 300px;
+                margin: auto;
+                float: right;
+                background: #dbdbd6;
+              }
+              .top2 .left {
+                width: 150px; 
+                height: 300px;
+                margin: 0;
+                float: left;
+                background: #ffffff;
+              }
+
+              .top2 .left .text1{
+                width: 100px; 
+                height: 70px;
+                padding: 100px 0px 0px 50px;
+                margin: 0; 
+                background: #ffffff;
+              }
+              .top2 .left .text2{
+                width: 100px; 
+                height: 70px;
+                padding: 0px 0px 0px 50px;
+                margin: 0; 
+                background: #ffffff;
+              }
+              .top2 .right .text3{
+        
+                padding: 20px 0px 0px 50px;
+                margin: 0; 
+                
+              }
+              .top2 .right .prof{
+                  border-bottom: 2px solid gray;
+                padding-bottom: 5px;
+                margin: 15px 10px 0px 40px;
+               }
+ .prof svg{
+  margin-right: 10px;   
+ }
+                
