@@ -28,13 +28,13 @@ img {
 }
 .portfolio__header {
     background: url('images/22.jpg');
-    border: 0px solid brown;
+    
     border-radius: 10px 10px 0px 0px ;
     height: 100px;
     width: 400px;
 }
 .portfolio__main {
-    border: 0px solid brown;
+    
     border-radius: 0px 0px 10px 10px ;
     height: 300px;
     width: 400px;
@@ -58,7 +58,7 @@ img {
     width: 100px;
     height: 70px;
     margin: 0;
-    background: #ffffff;
+    background: #fff;
     padding: 0px 0px 0px 50px;
 }
 .portfolio__followers_position_top{
@@ -87,7 +87,7 @@ img {
     width: 110px;
     height: 110px;
 }
-.avatar_circle{
+.avatar_type_circle{
     border-radius: 50%;
 }
 .big-text{
