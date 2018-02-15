@@ -1,41 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
     <head>
-        <title>Dialog example</title>
-        <style>
-            .btn {
-                text-align: center;
-                text-decoration: none;
-                background-color: blue;
-                color: white;
-                text-transform: capitalize;
-                padding: 20px 0px;
-                min-width: 150px;
-                border: 1px solid darkblue;
-                border-radius: 6px;
-                overflow: hidden;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content='width=device-width'>
+        <title>Transform</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
-    <body>
-        <button id="open" class="btn">Open Dialog</button>
-        <button id="close" class="btn">Close Dialog</button>
-
-        <dialog id="dialog">
-            <h2>Dialog Title</h2>
-            <p>Dialog content and other stuff will go here</p>
-        </dialog>
-
-        <script>
-            window.onload = function() {
-                const dialog = document.getElementById("dialog");
-                document.getElementById("open").addEventListener("click", function() {
-                    dialog.show();
-                });
-                document.getElementById("close").addEventListener("click", function() {
-                    dialog.close();
-                });
-            }
-        </script>
-    </body>
+<body>
+    <img src="img/fon.jpg" alt="fon">
+        <header>
+           <img src="img/shapka.jpg" alt="shapka">
+           <div class="info-1">
+               <div class="left">
+                   <a class="attr" href="#"><p><span>146</span><br>Followers</p></a>
+                   <a class="attr" href="#"><p><span>181</span><br>Following</p></a>
+                </div>
+                <div class="right">
+                    <a class="my-name" href="#"><p><span>Misyuta Alexandr</span><br>Minsk, RB</p></a>
+                    <div class="attr-2">
+                        <img src="img/facebook.png" alt="facebook">
+                        <span>Alex Misyuta</span>
+                    </div>
+                    <div class="attr-2">
+                        <img src="img/google.png" alt="google">
+                        <span>sanja@gmail.com</span>
+                    </div>
+                    <div class="attr-2">
+                        <img src="img/instagram.png" alt="instagram">
+                        <span>sanja081107</span>
+                    </div>
+                    <div class="attr-2">
+                        <img src="img/download.png" alt="download">
+                        <span>Download resume</span>
+                    </div>
+                </div>
+           </div>
+           <div class="face">
+               <img src="img/face.jpg" width="35%" height="35%" alt="face">
+           </div>
+        </header>
+</body>
 </html>
