@@ -1,0 +1,96 @@
+body {
+    background: url('images/Lavanda.jpg');
+    color:rgb(194, 189, 189);
+}
+img {
+    display: block;
+    border: none;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.portfolio {
+    background: #d3fcbe;
+    border: 1px solid rgb(121, 117, 117);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 400px;
+    width: 400px;
+}
+.portfolio__header {
+    background: url('images/22.jpg');
+    
+    border-radius: 10px 10px 0px 0px ;
+    height: 100px;
+    width: 400px;
+}
+.portfolio__main {
+    
+    border-radius: 0px 0px 10px 10px ;
+    height: 300px;
+    width: 400px;
+    overflow: auto;
+}
+.portfolio__info{
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    float: right;
+    background: #f8f8f4;
+}
+.portfolio__activity {
+    width: 150px;
+    height: 300px;
+    margin: 0;
+    float: left;
+    background: #ffffff;
+}
+.portfolio__followers{
+    width: 100px;
+    height: 70px;
+    margin: 0;
+    background: #fff;
+    padding: 0px 0px 0px 50px;
+}
+.portfolio__followers_position_top{
+    padding-top: 100px;
+}
+.portfolio__about{
+    font-size: 17px;
+    margin-bottom: 15px;
+    padding: 20px 0px 0px 40px;
+}
+.portfolio__item{
+    border-bottom: 2px solid rgb(214, 203, 203);
+    padding-bottom: 5px;
+    margin: 10px 30px 0px 40px;
+    font-size: 17px;
+}
+.portfolio__itemspan{
+    margin-left: 10px;
+}
+.avatar {
+    border: 3px solid rgb(254, 255, 254);
+    position: fixed;
+    margin: 50px;
+    overflow: hidden;
+    z-index: 10;
+    width: 110px;
+    height: 110px;
+}
+.avatar_type_circle{
+    border-radius: 50%;
+}
+.big-text{
+    font-size: 22px;
+    color: gray;
+}
