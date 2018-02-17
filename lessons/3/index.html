@@ -16,14 +16,14 @@
 Praesent sed congue magna. Etiam bibendum odio sed pellentesque volutpat. Mauris varius fermentum massa, sed rutrum tellus faucibus in. Ut eget sem felis. Nunc eget vulputate mauris. Pellentesque posuere vulputate enim, vel pretium tortor fermentum a. Ut fermentum dictum nunc id commodo.
       </div>
       <script>
-        window.onload = function() {
-          var button = document.querySelector('.instructions');
+        document.addEventListener('DOMContentLoaded', function() {
+          var link = document.querySelector('.instructions');
           var text = document.querySelector('.text');
 
-          button.addEventListener('click', function() {
+          link.addEventListener('click', function() {
             text.classList.toggle('text_open');
           });
-        }
+        });
       </script>
     </body>
 </html>
