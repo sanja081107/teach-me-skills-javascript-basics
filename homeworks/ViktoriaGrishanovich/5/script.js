@@ -21,7 +21,7 @@ console.log("vika bb cccc ddddddd gg   r  result = "+findLongestWord(" vika bb c
 
 
 
-function  findLongestWord1(str) {
+function  findLongestWord2(str) {
 
     var posSpace = -1;
 
@@ -53,72 +53,4 @@ function  findLongestWord1(str) {
    
 }
 
-console.log( "mama hi programer papa result= " +findLongestWord1(" mama   hi programer   papa  "));
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*function sum(n){
-    var sum=0;
-    for (var i=1; )*/
-//    var n = Number(prompt("Введите n число"));
-//    if(n===1){
-//        return 1;
-//            return n+ sum(n-1); }
-//        
-//    
-//  {
-//    console.log(sum(n));  
-//      
-//      
-//      //switch(x) {
-// // case 
-//      
- 
-
-
-
-
-//var a = Number(prompt("Введите первое число"));
-
-//console.log('первое число ' + a );
-
-//var b = Number(prompt("Введите второе число"));
-
-////console.log( 'второе число '+ b );
-
-
-//var s = Number(prompt("Введите третее число"));
-
-//console.log( 'третее число '+ s );
-
-//var result = a+b-s;
-
-//console.log(result);
-
-
-//alert (a+' + '+b +' - '+s+' = '+result );
-
-/*
-var from = "Маша";
-
-function showMessage(from) {
-    var text = arguments[1];
-  from = 'Петя'; // меняем локальную переменную from
-  alert( from + ': ' + text );
-}
-
-showMessage(from, "Привет");
-
-
-alert( from ); // старое значение from без изменений, в функции была изменена копия
-*/
+console.log( "mama hi programer papa result= " +findLongestWord2(" mama   hi programer   papa  "));
