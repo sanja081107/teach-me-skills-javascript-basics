@@ -1,0 +1,79 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/bg.jpg) no-repeat center top / cover;
+    height: 100vh;
+    
+}
+.portfolio-card {
+    width: 400px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.5);
+}
+.background-top {
+    height: 100px;
+    background: url(img/bg-top.jpg) no-repeat center top / cover;
+    border-radius: 20px 20px 0 0;
+}
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+.profile-info-left {
+    width: 180px;
+    background: #fff;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    border-radius: 0 0 0 20px;
+}
+.profile-info-left__followers-number {
+    font-size: 20px;
+    color: gray;
+}
+.profile-info-right {
+    min-width: 220px;
+    background: #fff;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 20px 0;
+}
+
+.profile-info-right__profession, .profile-info-right__site, .profile-info-right__email, .profile-info-right__phone, .profile-info-right__download {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid lightgray;
+} 
+.profile-info-right__name {
+    font-size: 25px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.profile-info-right__place{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
