@@ -1,5 +1,65 @@
 # DOM & Events
 
+## **Введение в DOM**
+
+1. **Объектная модель документа**
+
+  [Окружение: DOM, BOM и JS](https://learn.javascript.ru/browser-environment#объектная-модель-документа-dom)
+
+1. **Дерево DOM**
+
+  [Дерево DOM](https://learn.javascript.ru/dom-nodes)
+
+1. **Работа с DOM из консоли**
+
+  [Работа с DOM из консоли](https://learn.javascript.ru/dom-console)
+
+1. **Навигация по DOM-элементам**
+
+  [Навигация по DOM-элементам](https://learn.javascript.ru/traversing-dom)
+
+1. **Поиск элементов**
+
+  [Поиск: getElement* и querySelector* и не только](https://learn.javascript.ru/searching-elements-dom)
+
+1. **Работа с атрибутами, классами, data-атрибутами**
+
+  [Атрибуты и DOM-свойства](https://learn.javascript.ru/attributes-and-custom-properties)
+
+## Видео по теме DOM:
+
+[Основы javascript 16 - DOM (объектная модель документа)](https://www.youtube.com/watch?v=1FpuKVmotNc)
+
+[Основы javascript 18 - Изменение стилей элемента.](https://www.youtube.com/watch?v=NDe-anrOZ_s)
+
+[Уроки JavaScript | #15 - Как работать с DOM. Доступ к элементам вэб страницы](https://www.youtube.com/watch?v=AZx45EHcA1w)
+
+[Уроки JavaScript | #16 - Изменение элементов с помощью DOM.](https://www.youtube.com/watch?v=pc9ZErBw8zI)
+
+## События:
+
+1. **Введение**
+
+  [Введение в браузерные события](https://learn.javascript.ru/introduction-browser-events)
+
+1. **Порядок обработки событий**
+
+  [Порядок обработки событий](https://learn.javascript.ru/events-and-timing-depth)
+
+1. **Всплытие и перехват**
+
+  [Всплытие и перехват](https://learn.javascript.ru/event-bubbling)
+
+## Видео по теме События:
+
+[Основы javascript 20 - Знакомство с событиями](https://www.youtube.com/watch?v=Ojcp828IAfw)
+
+[Основы javascript 21 - стандартная модель событий](https://www.youtube.com/watch?v=0udLlA5Y7yc)
+
+[Основы javascript 22 - модель событий Internet Explorer](https://www.youtube.com/watch?v=OGs4L59vVS4)
+
+[Основы javascript 23 - кросс-браузерные события](https://www.youtube.com/watch?v=FFlRoNYXEW0)
+
 ## **DOM (Document Object Model)**
 
 – это представление документа в виде дерева объектов, доступное для изменения через JavaScript.
