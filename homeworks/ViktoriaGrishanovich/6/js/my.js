@@ -25,19 +25,17 @@ function filter(inData, func){
 function inBetween(firstNumber, lastNumber){
     
     return function (a) {
-        if(a>=firstNumber && a<=lastNumber)
-            return true;
-        else
-            return false;
+            return a>=firstNumber && a<=lastNumber;
     }; 
 }
 
 function inArray (arr) {
     
     return function(a) {
-        for(var i=0; i<arr.length; i++)
-        {
-            if(a===arr[i]) return true;
+        for(var i=0; i<arr.length; i++){
+            if(a===arr[i]) {
+                return true;
+            }
         }
         return false;
     }
