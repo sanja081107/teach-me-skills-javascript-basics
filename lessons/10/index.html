@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript example</title>
+        <style>
+            .field {
+                display: block;
+                margin: 12px 0;
+            }
+            .submit-btn {
+                padding: 8px 12px;
+            }
+            #user-info-container {
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="user-parameters">
+            <!--
+            <label for="admin"></label>
+            <input type="checkbox" id="admin" value="">
+            -->
+            <label class="field">
+                <input type="radio" checked name="gender" value="male"> Male
+            </label>
+            <label class="field">
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <select class="field" name="nat">
+                <option value="au">AU</option>
+                <option value="ca">CA</option>
+                <option value="us">US</option>
+            </select>
+            <button class="submit-btn">Submit</button>
+            <!-- <input type="submit" value="Submit"> -->
+        </form>
+        <div id="user-info-container">
+        </div>
+
+
+
+
+
+        <ul id="container">
+            <!-- Need to insert items here -->
+        </ul>
+
+        <script id="template" type="x-tmpl-mustache">
+            <h2>{{title}}</h2>
+            <ul class="users">
+                {{#users}}
+                    <li class="users__item">{{firstName}} {{lastName}}</li>
+                {{/users}}
+            </ul>
+        </script>
+        <script id="user-template" type="x-tmpl-mustache">
+            <img src="{{picture.large}}" width="200" height="200" alt="Avatar">
+            <p>{{login.username}}</p>
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
