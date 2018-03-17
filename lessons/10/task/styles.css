@@ -1,0 +1,29 @@
+.field {
+    display: block;
+    margin: 12px 0;
+}
+.submit-btn {
+    padding: 8px 12px;
+}
+
+.users-list .users-list__title {
+    background:#5bc0de;
+    border:2px solid #DDDDDD;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+
+.user .user__name {
+    color:#5bc0de;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user .user__btn {
+    float: right;
+}
+
+.user .user__avatar {
+    width: 128px;
+    height: 128px;
+}
