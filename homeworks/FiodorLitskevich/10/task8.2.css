@@ -1,0 +1,21 @@
+.field {
+    display: block;
+    margin: 12px 0;
+}
+.submit-btn {
+    padding: 8px 12px;
+}
+#user-info-container {
+    margin: 20px 0;
+}
+div{
+    border: 10px grey;
+    border-radius:10px;
+    text-align: center;
+    background-color: grey;
+    padding: 19px;
+}
+h1{
+    text-align: center;
+
+}
