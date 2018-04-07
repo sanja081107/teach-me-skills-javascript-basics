@@ -1,0 +1,41 @@
+.tabs {
+    border: 1px solid darkgrey;
+}
+
+.tabs__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid darkgrey;
+    background-color: #f1f1f1;
+}
+
+.tabs__navigation-link {
+    padding: 12px 18px;
+    color: #000;
+    background-color: inherit;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.tabs__navigation-link:hover {
+    background-color: #ddd;
+}
+
+.tabs__navigation-link_active {
+    background-color: #ccc;
+}
+
+.tabs__contents {
+    padding: 12px 18px;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content_active {
+    display: block;
+}

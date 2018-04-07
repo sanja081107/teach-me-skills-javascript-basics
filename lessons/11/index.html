@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript example</title>
+    </head>
+    <body>
+        <div class="counter">
+            <button class="counter__button counter__button_type_decrement" onclick>-</button>
+            <span class="counter__value"></span>
+            <button class="counter__button counter__button_type_increment">+</button>
+            <div class="counter__history-controls">
+                <button class="counter__button counter__button_type_prev">prev</button>
+                <button class="counter__button counter__button_type_next">next</button>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // var counterValueElement = document.querySelector('.counter__value');
+                // var incrementButton = document.querySelector('.counter__button_type_increment');
+                // var decrementButton = document.querySelector('.counter__button_type_decrement');
+                // var counterValue = 0;
+
+                // function setCounterValue(value) {
+                //     counterValueElement.innerHTML = value
+                // }
+
+                // setCounterValue(counterValue);
+
+                // incrementButton.addEventListener('click', function() {
+                //     setCounterValue(++counterValue);
+                // });
+
+                // decrementButton.addEventListener('click', function() {
+                //     setCounterValue(--counterValue);
+                // });
+
+
+                /**
+                 * Счётчик с историей изменений
+                 */
+                var counterValueElement = document.querySelector('.counter__value');
+                var incrementButton = document.querySelector('.counter__button_type_increment');
+                var decrementButton = document.querySelector('.counter__button_type_decrement');
+                var nextButton = document.querySelector('.counter__button_type_next');
+                var prevButton = document.querySelector('.counter__button_type_prev');
+                var counterValue = 0;
+                var history = [];
+                var historyIndex = -1;
+
+                /**
+                 * Функция изменяет текущее значение счётчика и обновляет цифру на экране.
+                 */
+                function setCounterValue(value) {
+                    counterValue = value;
+                    counterValueElement.innerHTML = value;
+                }
+
+                /**
+                 * Функция, которая изменяет значение счётчика, записывая новое значение в историю.
+                 * Если в этот момент мы находились в середине истории, то будущее перезаписывается.
+                 * @param value
+                 */
+                function goToValue(value) {
+                    // Если в истории что-то есть, то стираем будущее, в историю добавляем новое значение счётчика.
+                    // Иначе просто добавляем элемент в историю.
+                    if (history.length > 0) {
+                        // Удаляем из массива history элементы с индекса historyIndex + 1 до конца массива,
+                        // в позицию historyIndex + 1 вставляем новый элемент истории, новое значение счётчика.
+                        history.splice(historyIndex + 1, history.length - historyIndex - 1, value);
+                    } else {
+                        history.push(value);
+                    }
+
+                    // При записи в истории индекс в массиве истории должен указывать на последний элемент истории.
+                    historyIndex = history.length - 1;
+
+                    // Изменяем значение счётчика.
+                    setCounterValue(value);
+                }
+
+                /**
+                 * Функция, которая перемещается в истории к предыдущему значению.
+                 */
+                function moveToPrev() {
+                    // Если мы на первом элементе массива, то дальше идти некуда, более поздней истории нет.
+                    if (historyIndex - 1 < 0) {
+                        return;
+                    }
+
+                    historyIndex--;
+                    setCounterValue(history[historyIndex]);
+                }
+
+                /**
+                 * Функция, которая перемещается в истории к следующему значению.
+                 */
+                function moveToNext() {
+                    // Мы не можем переместиться дальше последнего момента в истории.
+                    if (historyIndex + 1 > history.length - 1) {
+                        return;
+                    }
+
+                    historyIndex++;
+                    setCounterValue(history[historyIndex]);
+                }
+
+                goToValue(counterValue);
+
+                incrementButton.addEventListener('click', function() {
+                    goToValue(counterValue + 1);
+                });
+
+                decrementButton.addEventListener('click', function() {
+                    goToValue(counterValue - 1);
+                });
+
+                nextButton.addEventListener('click', moveToNext);
+                prevButton.addEventListener('click', moveToPrev);
+            });
+        </script>
+    </body>
+</html>
